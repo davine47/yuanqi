@@ -18,7 +18,13 @@ GetOptions(
 
 # Main args parser
 if ($cmd) {
-	YuanQiService::sayHello();
+  if($cmd eq "hello") {
+	  YuanQiService::sayHello();
+  } elsif ($cmd eq "ccb") {
+    YuanQiService::compileChangbai();
+  } else {
+    print "default print\n"
+  }
 } else {
   die "Error! yuanqi command is blank!";
 }

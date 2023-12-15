@@ -1,0 +1,6 @@
+[submodule "changbai"]
+	path = changbai
+	url = https://github.com/davine47/changbai.git
+[submodule "circt"]
+	path = circt
+	url = https://github.com/davine47/circt.git
