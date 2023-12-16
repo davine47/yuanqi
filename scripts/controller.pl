@@ -20,10 +20,18 @@ GetOptions(
 if ($cmd) {
   if($cmd eq "hello") {
 	  YuanQiService::sayHello();
-  } elsif ($cmd eq "ccb") {
+  } 
+  elsif ($cmd eq "cmd") {
+    YuanQiService::printCmd();
+  } 
+  elsif ($cmd eq "ccb") {
     YuanQiService::compileChangbai();
-  } else {
-    print "default print\n"
+  } 
+  elsif ($cmd eq "replace-riscv-gnu-toolchain-git-url") {
+    YuanQiService::replaceRiscvGnuToolchainGitUrl();
+  }
+  else {
+    print "default print\n";
   }
 } else {
   die "Error! yuanqi command is blank!";
