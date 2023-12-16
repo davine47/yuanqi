@@ -1,4 +1,26 @@
 # YuanQi(元气) env
+Setup YuanQi env
+```shell
+source env.sh
+```
+
+## riscv-opcodes
+```shell
+# python prerequisites
+pip3 install PyYAML
+
+# generate a instr_dict.yaml
+make
+
+# make different language target encoding list
+make inst.chisel
+make inst.go 
+make latex
+make inst.sverilog
+make inst.rs
+
+
+```
 
 ## riscv-gcc-toolchain
 ```shell
@@ -41,7 +63,6 @@ make -j
 
 
 ## circt
-
 ```shell
 # 替换仓库源
 cd ./circt
