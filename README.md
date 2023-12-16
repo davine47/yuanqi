@@ -4,6 +4,13 @@ Setup YuanQi env
 source env.sh
 ```
 
+## riscv-isa-sim
+```shell
+cd ./riscv-isa-sim
+../configure --prefix=$RISCV 
+make -j
+```
+
 ## riscv-opcodes
 ```shell
 # python prerequisites
@@ -18,8 +25,6 @@ make inst.go
 make latex
 make inst.sverilog
 make inst.rs
-
-
 ```
 
 ## riscv-gcc-toolchain
