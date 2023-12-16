@@ -19,12 +19,26 @@ sed -i'' -e "s|https://github.com/llvm/llvm-project.git|https://mirrors.tuna.tsi
 # init git submodule
 git submodule update --init
 
+# ubuntu prerequisites
+sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev
+
+# linux prerequisites
+sudo pacman -Syyu autoconf automake curl python3 libmpc mpfr gmp gawk base-devel bison flex texinfo gperf libtool patchutils bc zlib expat
+
+# Fedora/CentOS/RHEL OS prerequisites
+sudo yum install autoconf automake python3 libmpc-devel mpfr-devel gmp-devel gawk  bison flex texinfo patchutils gcc gcc-c++ zlib-devel expat-devel
+
+# mac os prerequisites
+brew install python3 gawk gnu-sed gmp mpfr libmpc isl zlib expat texinfo flock
+
 # compile
 mkdir -p ./riscv-gcc-toolchain/build 
 ../configure --prefix=$RISCV --enable-multilib --with-arch=rv64gcv_zifencei_zicsr
 make -j
 
 ```
+
+
 
 ## circt
 
