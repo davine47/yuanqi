@@ -15,9 +15,14 @@ sed -i'' -e "s|https://sourceware.org/git/binutils-gdb.git|https://mirrors.tuna.
 sed -i'' -e "s|https://gitlab.com/qemu-project/qemu.git|https://mirrors.tuna.tsinghua.edu.cn/git/qemu.git|g" ./.gitmodules
 # llvm
 sed -i'' -e "s|https://github.com/llvm/llvm-project.git|https://mirrors.tuna.tsinghua.edu.cn/git/llvm-project.git|g" ./.gitmodules
+
 # init git submodule
 git submodule update --init
 
+# compile
+mkdir -p ./riscv-gcc-toolchain/build 
+../configure --prefix=$RISCV --enable-multilib --with-arch=rv64gcv_zifencei_zicsr
+make -j
 
 ```
 
