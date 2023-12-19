@@ -7,12 +7,12 @@
 [submodule "riscv-opcodes"]
 	path = riscv-opcodes
 	url = https://github.com/riscv/riscv-opcodes.git
-[submodule "riscv-tests"]
-	path = riscv-tests
-	url = https://github.com/riscv-software-src/riscv-tests.git
 [submodule "targets/changbai"]
 	path = targets/changbai
 	url = https://github.com/davine47/changbai.git
 [submodule "sims/riscv-isa-sim"]
 	path = sims/riscv-isa-sim
 	url = https://github.com/riscv-software-src/riscv-isa-sim.git
+[submodule "tests/riscv-tests"]
+	path = tests/riscv-tests
+	url = https://github.com/riscv-software-src/riscv-tests.git
