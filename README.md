@@ -80,7 +80,7 @@ git status
 # 使用make清除命令
 make distclean
 ```
-[ ] TODO: gdb的构建会报错: configure: error: GMP is missing or unusable
+- [] TODO: gdb的构建会报错: configure: error: GMP is missing or unusable
 
 ## circt
 ```shell
