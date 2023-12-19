@@ -3,7 +3,19 @@ Setup YuanQi env
 ```shell
 source env.sh
 ```
+
+## rocket-chip
+```shell
+# 编译verilog (mill, jvm, firtool)
+make verilog
+# 编译Testharness并运行riscv-tests (mill, jvm, firtool, verilator, riscv-isa-sim, riscv-gnu-toolchain, riscv-tests)
+mill "runnable-riscv-test[freechips.rocketchip.system.TestHarness,freechips.rocketchip.system.DefaultConfig,_,_].run"
+```
+Errors
+* firtool新版工具不支持-dedup和-disable-infer-rw这两个选项，需要去掉或控制firtool版本，issue中提到用nix做环境版本控制
+
 ## riscv-tests
+Errors
 * 遇到stdint.h等标准库没find到，是riscv-gnu-toolchain的构建出错未完全完成，查看riscv64-unknown-elf文件夹中是否有include文件夹
 
 
