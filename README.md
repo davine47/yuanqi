@@ -64,7 +64,7 @@ brew install python3 gawk gnu-sed gmp mpfr libmpc isl zlib expat texinfo flock
 # compile
 mkdir -p ./riscv-gcc-toolchain/build 
 ../configure --prefix=$RISCV --enable-multilib --with-arch=rv64gcv_zifencei_zicsr
-make -j
+make
 
 ```
 Errors
@@ -80,7 +80,7 @@ git status
 # 使用make清除命令
 make distclean
 ```
-- [] TODO: gdb的构建会报错: configure: error: GMP is missing or unusable
+* TODO: gdb的构建会报错: configure: error: GMP is missing or unusable
 
 ## circt
 ```shell
@@ -101,6 +101,10 @@ git submodule update --init
 git remote -v
 # 添加子模块仓库
 git submodule add <git-url>
+# 删除子模块三步走, 第一步删除.git/config下信息, 第二步删除.gitmodules信息, 第三步删除剩余信息
+git submodule deinit <submodule>
+git rm <submodule>
+rm -rf .git/modules/<submodule>
 ```
 
 

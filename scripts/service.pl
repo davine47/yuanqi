@@ -9,10 +9,10 @@ sub sayHello {
 };
 
 sub compileChangbai {
-	my $res = system("cd $root/changbai && make changbai");
+	my $res = system("cd $root/targets/changbai && make changbai");
 };
 
-sub replace_riscv_gnu_toolchain_git_url {
+sub replaceRiscvGnuToolchainGitUrl {
 	my $res = system("cd $root/riscv-gnu-toolchain &&
 										sed -i\'\' -e \"s|https://gcc.gnu.org/git/gcc.git|https://mirrors.tuna.tsinghua.edu.cn/git/gcc.git|g\" ./.gitmodules &&
 										sed -i\'\' -e \"s|https://sourceware.org/git/glibc.git|https://mirrors.tuna.tsinghua.edu.cn/git/glibc.git|g\" ./.gitmodules &&
