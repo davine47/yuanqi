@@ -5,9 +5,7 @@ source env.sh
 ```
 ## riscv-tests
 * 遇到stdint.h等标准库没find到，是riscv-gnu-toolchain的构建出错未完全完成，查看riscv64-unknown-elf文件夹中是否有include文件夹
-```shell
 
-```
 
 ## riscv-isa-sim
 ```shell
@@ -82,7 +80,7 @@ git status
 # 使用make清除命令
 make distclean
 ```
-[] TODO: gdb的构建会报错: configure: error: GMP is missing or unusable
+[ ] TODO: gdb的构建会报错: configure: error: GMP is missing or unusable
 
 ## circt
 ```shell
