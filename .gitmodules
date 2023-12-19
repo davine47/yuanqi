@@ -4,9 +4,6 @@
 [submodule "riscv-gnu-toolchain"]
 	path = riscv-gnu-toolchain
 	url = https://github.com/riscv-collab/riscv-gnu-toolchain.git
-[submodule "targets/changbai"]
-	path = targets/changbai
-	url = https://github.com/davine47/changbai.git
 [submodule "sims/riscv-isa-sim"]
 	path = sims/riscv-isa-sim
 	url = https://github.com/riscv-software-src/riscv-isa-sim.git
@@ -16,3 +13,6 @@
 [submodule "tools/riscv-opcodes"]
 	path = tools/riscv-opcodes
 	url = https://github.com/riscv/riscv-opcodes.git
+[submodule "targets/spinalhdl/changbai"]
+	path = targets/spinalhdl/changbai
+	url = https://github.com/davine47/changbai.git
