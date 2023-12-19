@@ -3,6 +3,11 @@ Setup YuanQi env
 ```shell
 source env.sh
 ```
+## riscv-tests
+* 遇到stdint.h等标准库没find到，是riscv-gnu-toolchain的构建出错未完全完成，查看riscv64-unknown-elf文件夹中是否有include文件夹
+```shell
+
+```
 
 ## riscv-isa-sim
 ```shell
@@ -64,8 +69,20 @@ mkdir -p ./riscv-gcc-toolchain/build
 make -j
 
 ```
-
-
+Errors
+* 不能 make -j8，多核情况下会报错，但其他并行编译会打印一些正确的信息把错误覆盖掉
+* configure: error: source directory already configured; run "make distclean" there first
+```shell
+# 删除gcc的安装目录
+rm -rf $RISCV 
+# 删除build文件夹
+rm -rf build 
+# 查看gcc、newlib、等仓库的改变情况，使用git
+git status
+# 使用make清除命令
+make distclean
+```
+[] TODO: gdb的构建会报错: configure: error: GMP is missing or unusable
 
 ## circt
 ```shell
