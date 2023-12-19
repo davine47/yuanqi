@@ -16,3 +16,6 @@
 [submodule "targets/spinalhdl/changbai"]
 	path = targets/spinalhdl/changbai
 	url = https://github.com/davine47/changbai.git
+[submodule "targets/chisel/rocket-chip"]
+	path = targets/chisel/rocket-chip
+	url = https://github.com/chipsalliance/rocket-chip.git
