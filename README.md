@@ -4,12 +4,25 @@ Setup YuanQi env
 source env.sh
 ```
 
+## vexriscv
+```sh
+./mill VexRiscv.runMain vexriscv.demo.GenFull
+./mill VexRiscv.test.testOnly vexriscv.TestIndividualFeatures
+./mill VexRiscv.runMain vexriscv.demo.Briey
+./mill VexRiscv.runMain vexriscv.demo.Murax
+./mill VexRiscv.runMain vexriscv.demo.MuraxWithRamInit
+./mill VexRiscv.test.runMain vexriscv.MuraxSim
+./mill mill.idea.GenIdea/idea
+```
+
 ## rocket-chip
 ```shell
 # 编译verilog (mill, jvm, firtool)
 make verilog
 # 编译Testharness并运行riscv-tests (mill, jvm, firtool, verilator, riscv-isa-sim, riscv-gnu-toolchain, riscv-tests)
 mill "runnable-riscv-test[freechips.rocketchip.system.TestHarness,freechips.rocketchip.system.DefaultConfig,_,_].run"
+# mill生成idea依赖
+mill -i mill.idea.GenIdea/idea
 ```
 Errors
 * firtool新版工具不支持-dedup和-disable-infer-rw这两个选项，需要去掉或控制firtool版本，issue中提到用nix做环境版本控制
