@@ -19,3 +19,9 @@
 [submodule "targets/chisel/rocket-chip"]
 	path = targets/chisel/rocket-chip
 	url = https://github.com/chipsalliance/rocket-chip.git
+[submodule "tests/riscv-dv"]
+	path = tests/riscv-dv
+	url = https://github.com/davine47/riscv-dv.git
+[submodule "targets/spinalhdl/VexiiRiscv"]
+	path = targets/spinalhdl/VexiiRiscv
+	url = https://github.com/davine47/VexiiRiscv.git
