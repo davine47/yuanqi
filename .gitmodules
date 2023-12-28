@@ -13,15 +13,9 @@
 [submodule "tools/riscv-opcodes"]
 	path = tools/riscv-opcodes
 	url = https://github.com/riscv/riscv-opcodes.git
-[submodule "targets/spinalhdl/changbai"]
-	path = targets/spinalhdl/changbai
-	url = https://github.com/davine47/changbai.git
-[submodule "targets/chisel/rocket-chip"]
-	path = targets/chisel/rocket-chip
-	url = https://github.com/chipsalliance/rocket-chip.git
 [submodule "tests/riscv-dv"]
 	path = tests/riscv-dv
 	url = https://github.com/davine47/riscv-dv.git
-[submodule "targets/spinalhdl/VexiiRiscv"]
-	path = targets/spinalhdl/VexiiRiscv
-	url = https://github.com/davine47/VexiiRiscv.git
+[submodule "targets/changbai"]
+	path = targets/changbai
+	url = https://github.com/davine47/changbai.git
