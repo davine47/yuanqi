@@ -19,3 +19,12 @@
 [submodule "targets/changbai"]
 	path = targets/changbai
 	url = https://github.com/davine47/changbai.git
+[submodule "targets/XiangShan"]
+	path = targets/XiangShan
+	url = https://github.com/OpenXiangShan/XiangShan.git
+[submodule "targets/boom"]
+	path = targets/boom
+	url = https://github.com/riscv-boom/riscv-boom.git
+[submodule "tests/riscv-vector-tests"]
+	path = tests/riscv-vector-tests
+	url = https://github.com/davine47/riscv-vector-tests.git
