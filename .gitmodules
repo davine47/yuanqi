@@ -31,3 +31,6 @@
 [submodule "fe/verilator"]
 	path = fe/verilator
 	url = http://git.veripool.org/git/verilator
+[submodule "targets/VexiiRiscv"]
+	path = targets/VexiiRiscv
+	url = https://github.com/SpinalHDL/VexiiRiscv.git
