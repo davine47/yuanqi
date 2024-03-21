@@ -34,3 +34,6 @@
 [submodule "targets/VexiiRiscv"]
 	path = targets/VexiiRiscv
 	url = https://github.com/SpinalHDL/VexiiRiscv.git
+[submodule "arch/opensbi"]
+	path = arch/opensbi
+	url = https://github.com/riscv-software-src/opensbi.git
