@@ -40,3 +40,6 @@
 [submodule "tests/riscv-hs-tests"]
 	path = tests/riscv-hs-tests
 	url = https://github.com/davine47/riscv-hs-tests.git
+[submodule "tests/riscv-hyp-tests"]
+	path = tests/riscv-hyp-tests
+	url = https://github.com/josecm/riscv-hyp-tests.git
