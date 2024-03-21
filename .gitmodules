@@ -37,3 +37,6 @@
 [submodule "arch/opensbi"]
 	path = arch/opensbi
 	url = https://github.com/riscv-software-src/opensbi.git
+[submodule "tests/riscv-hs-tests"]
+	path = tests/riscv-hs-tests
+	url = https://github.com/davine47/riscv-hs-tests.git

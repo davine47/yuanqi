@@ -37,6 +37,9 @@ Errors
 cd ./riscv-isa-sim
 ../configure --prefix=$RISCV 
 make -j
+
+# more oprions example:
+../configure --with-boost=no --with-boost-asio=no --with-boost-regex=no --with-priv=MSU --with-isa=rv64gcv --with-varch=vlen:128,elen:64
 ```
 
 ## riscv-opcodes
