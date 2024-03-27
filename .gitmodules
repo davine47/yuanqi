@@ -43,3 +43,6 @@
 [submodule "tests/riscv-hyp-tests"]
 	path = tests/riscv-hyp-tests
 	url = https://github.com/josecm/riscv-hyp-tests.git
+[submodule "tests/force-riscv"]
+	path = tests/force-riscv
+	url = https://github.com/openhwgroup/force-riscv.git
