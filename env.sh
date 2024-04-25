@@ -14,4 +14,5 @@ export SPIKE_PATH=$RISCV/bin/spike
 export FIRRTL_PATH=$YUANQI_HOME/apps/firtool-1.65.0
 export PATH=$FIRRTL_PATH/bin:$PATH
 export PATH=$APPS/bin:$PATH
-
+export SVUNIT_INSTALL=`pwd`/tools/svunit
+export PATH=$PATH:$SVUNIT_INSTALL"/bin"
