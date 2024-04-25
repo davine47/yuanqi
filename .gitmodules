@@ -46,3 +46,12 @@
 [submodule "tests/force-riscv"]
 	path = tests/force-riscv
 	url = https://github.com/openhwgroup/force-riscv.git
+[submodule "docs/spec/riscv-isa-manual"]
+	path = docs/spec/riscv-isa-manual
+	url = https://github.com/davine47/riscv-isa-manual.git
+[submodule "tools/sauron"]
+	path = tools/sauron
+	url = https://github.com/davine47/sauron.git
+[submodule "tools/svunit"]
+	path = tools/svunit
+	url = https://github.com/svunit/svunit.git
